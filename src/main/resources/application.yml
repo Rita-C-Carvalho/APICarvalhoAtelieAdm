@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/CarvalhoAtelieAdm
+    username: postgres
+    password: 260156
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+server:
+  error:
+    include-message: always
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+    br.com.carvalho.CarvalhoAtelieAdm: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+
+jwt:
+  secret: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IlJpdGEgQ2FydmFsaG8iLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTE2MjM5MDIyfQ.3Hj6hChIZ1EHG2LOuU9tNrL0ETgj5xdXqPujG6xhIQEsEcGappe089g1s-B9o5fuR9fqrx1F69SoetposieOiA
+  expiration: 900000
+
+cloudinary:
+  cloud-name: dcnm2izt0
+  api-key: 745766634778651
+  api-secret: gwjo1i7Dnf6kvq_WjTKfajBCJWY
