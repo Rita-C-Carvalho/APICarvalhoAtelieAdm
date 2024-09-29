@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.carvalho.CarvalhoAtelieAdm.security.TokenBlacklistServiceTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in br.com.carvalho.CarvalhoAtelieAdm.security.TokenBlacklistServiceTest
